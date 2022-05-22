@@ -1,3 +1,71 @@
+/*Estilos agregados por mi*/
+
+/* NavBar */
+nav {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-grow: 0;
+
+  background-color: #919191;
+  height: 3rem;
+  padding: 1px;
+}
+
+.navSuperior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 2rem 0.5rem 2rem;
+  padding: 1px;
+}
+
+.navSuperior h1 {
+  padding: 0;
+  margin: 0;
+  color: #707070;
+}
+
+.navSuperior button {
+  background: none;
+  border: none;
+  font-weight: bold;
+  font-style: italic;
+  color: #707070;
+}
+
+.navSuperior button:hover {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.navSuperior button:active {
+  color: #969696;
+}
+
+nav button {
+  background: none;
+  padding: 1rem 2rem 1rem 2rem;
+  border: 1px solid #919191;
+  color: white;
+  font-weight: bold;
+  cursor: pointer
+}
+
+nav button:hover {
+  background: #808080;
+  padding: 1rem 2rem 1rem 2rem;
+  border: 1px solid;
+}
+
+nav button:active {
+  background: #727272;
+  padding: 1rem 2rem 1rem 2rem;
+  border: 1px solid rgb(212, 212, 212);
+}
+
+
+/*Estilos por defecto React*/
 .App {
   text-align: center;
 }
