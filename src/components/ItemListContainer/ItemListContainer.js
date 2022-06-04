@@ -11,6 +11,8 @@ const ItemListContainer = (props) => {
     useEffect(() => {
         getProducts().then(response => {
             setProducts(response)
+        }).catch((error) => {
+            console.log(error);
         })
     })
 
