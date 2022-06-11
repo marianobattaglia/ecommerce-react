@@ -1,5 +1,10 @@
 /*Estilos agregados por mi*/
 
+body, input, button {
+  font-size: medium ;
+  font-family: 'Roboto', sans-serif;
+ }
+
 /* NavBar */
 nav {
   display: flex;
@@ -62,6 +67,13 @@ nav button:active {
   background: #727272;
   padding: 1rem 2rem 1rem 2rem;
   border: 1px solid rgb(212, 212, 212);
+}
+
+/* Container */ 
+.containerItemDetailContainer h1 {
+  margin-bottom: 1rem;
+  color: #707070;
+  text-shadow: 1px 1px 2px #70707090;
 }
 
 

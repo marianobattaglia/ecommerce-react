@@ -37,13 +37,13 @@ const ItemListContainer = (props) => {
     }, [categoryId])
 
     if(loading) {
-        return <h1>Cargando...</h1>
+        return <h1>Espere por favor...</h1>
     }
 
     return(
         <div>
             {/*<h1>{props.saludo}</h1>*/}
-            {products.length > 0 ? <ItemList products={products}/> : <h1>No hay productos</h1>}
+            {products.length > 0 ? <ItemList products={products}/> : <h1>Disculpe, no tenemos productos para esa categoría.</h1>}
             
         </div>
     )

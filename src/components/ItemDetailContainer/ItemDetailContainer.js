@@ -1,3 +1,4 @@
+import '../../App.css'
 import { useState, useEffect} from 'react'
 import { getProductById } from '../../asyncmocks'
 import ItemDetail from '../ItemDetail/ItemDetail'
@@ -15,10 +16,10 @@ const ItemDetailContainer = () => {
     }, [])
 
     return (
-        <>
+        <div className='containerItemDetailContainer'>
             <h1>Detalle del producto</h1>
             <ItemDetail {...product}/>
-        </>
+        </div>
     )
 }
 

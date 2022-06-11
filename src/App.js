@@ -20,6 +20,9 @@ function App() {
 
   return (
     <div className="App">
+      <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+      </style>
       <BrowserRouter>
       <NavBar/>
       <Routes>
@@ -28,10 +31,11 @@ function App() {
           <Route path='/detail/:productId' element={<ItemDetailContainer />} />
       </Routes>
       </BrowserRouter>
+
       {/*
       <NavBar className="navBar"/>
       <ItemListContainer saludo={"Hola coders"}/>
-  */}
+      */}
 
       {/* show && <Counter initial={10} stock={50} onAdd={handleAdd}/> */}
     </div>

@@ -18,8 +18,7 @@
     margin: 20px;
 }
 
-img {
-    
+.item img {
     height: 300px; /* alto */
     width: 280px; /* ancho */
     border-radius: 15px;
