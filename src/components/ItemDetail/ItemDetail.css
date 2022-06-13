@@ -87,3 +87,10 @@
 .detailInfo button:active {
     background: #727272;
 }
+
+.Counter h4 {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    align-self: center;
+}

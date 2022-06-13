@@ -1,18 +1,6 @@
-/*import Button from '../../Button/Button'
-
-const CartWidget = () => {
-    return (
-    <div>
-    <Button label='Ver Carrito'/>
-    </div>
-    )
-}
-
-export default CartWidget*/
-
 import './CartWidget.css'
 import { useContext } from 'react';
-import CartContext from '../../../context/CartContext';
+import CartContext from '../../context/CartContext';
 
 const CartWidget = () => {
 

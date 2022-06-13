@@ -13,7 +13,7 @@ const ItemDetailContainer = () => {
         getProductById(productId).then(response => {
             setProduct(response)
         })
-    }, [])
+    }, [productId])
 
     return (
         <div className='containerItemDetailContainer'>

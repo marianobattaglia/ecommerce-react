@@ -1,0 +1,69 @@
+.ItemFooter {
+    align-self: center;
+}
+
+.Controls {
+    height: 3rem;
+}
+
+.detailInfo .Button {
+    order: 1;
+    width: auto;
+    
+}
+
+.Counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: auto;
+}
+
+.Button {
+    padding: 12px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Button button {
+    background-color: #c4c4c4;
+    box-shadow: 0 10px 30px -10px rgb(0 0 0 / 20%);
+
+    border-radius: 5px;
+    font-weight: bold;
+    font-style: italic;
+    border-color: #919191;
+    color: black;
+}
+  
+.Button button:hover {
+    background: #919191;
+}
+  
+.Button button:active {
+    background: #727272;
+}
+
+
+.Number {
+    font-size: 20px;
+    padding: 20px;
+    margin: 0;
+    order: 1;
+}
+
+.Number h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.Controls {
+    display: flex;
+    justify-content: center;
+}

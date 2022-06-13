@@ -1,28 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
-import React, { useState } from 'react';
-import Counter from './components/Counter/Counter.js';
+import React, { useState, createContext } from 'react';
 import NavBar from './components/NavBar/NavBar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import Button from './components/Button/Button'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { CartProvider } from './context/CartContext'
 
 function App() {
   
-  {/*
-  const [show, setShow] = useState(true)
-
-  const handleAdd = () => {
-    console.log('se ejecuto')
-  }
-  */}
-
   return (
     <div className="App">
       <style>
       @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
       </style>
+
+      <CartProvider>
       <BrowserRouter>
       <NavBar/>
       <Routes>
@@ -31,13 +24,8 @@ function App() {
           <Route path='/detail/:productId' element={<ItemDetailContainer />} />
       </Routes>
       </BrowserRouter>
+      </CartProvider>
 
-      {/*
-      <NavBar className="navBar"/>
-      <ItemListContainer saludo={"Hola coders"}/>
-      */}
-
-      {/* show && <Counter initial={10} stock={50} onAdd={handleAdd}/> */}
     </div>
   );
 }
