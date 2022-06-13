@@ -31,16 +31,6 @@ export const CartProvider = ({ children }) => {
         return cart.some(prod => prod.id === id)
     }
 
-    // const getCartQuantity = () => {
-    //     let totalQuantity = 0
-
-    //     cart.forEach(prod => {
-    //         totalQuantity += prod.quantity
-    //     })
-
-    //     return totalQuantity
-    // }
-
     return (
         <CartContext.Provider value={{ 
             cart,
