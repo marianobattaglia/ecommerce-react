@@ -1,0 +1,22 @@
+.cart-img {
+    width: 50%;
+    align-self: center;
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.cart-img-container {
+    align-self: center;
+}
+
+.cart-title {
+    font-size: 1rem;
+    color: #e30428;
+    line-height: 1.4;
+}
+
+.item-cart:hover {
+    background-color: rgba(235, 235, 235, 0.685);
+}

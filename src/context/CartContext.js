@@ -31,6 +31,30 @@ export const CartProvider = ({ children }) => {
         return cart.some(prod => prod.id === id)
     }
 
+    const clearCart = () => {
+        setCart([])
+    }
+
+    // const getCartQuantity = () => {
+    //     let totalQuantity = 0
+
+    //     cart.forEach(prod => {
+    //         totalQuantity += prod.quantity
+    //     })
+
+    //     return totalQuantity
+    // }
+
+        //Reduce - Productos en total (cartWidget)
+        const getItemQty = () => {
+            return cart.reduce((acc, x) => acc += x.qty, 0)
+        }
+    
+        //Reduce - Cart - Precio total del carrito
+        const getItemPrice = () => {
+            return cart.reduce((acc, x) => acc += x.qty * x.price, 0)
+        }    
+
     return (
         <CartContext.Provider value={{ 
             cart,
@@ -38,6 +62,9 @@ export const CartProvider = ({ children }) => {
             addItem,
             removeItem,
             isInCart,
+            clearCart,
+            getItemQty,
+            getItemPrice
             // getCartQuantity
         }}>
             { children }
