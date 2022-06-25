@@ -45,14 +45,12 @@ export const CartProvider = ({ children }) => {
     //     return totalQuantity
     // }
 
-        //Reduce - Productos en total (cartWidget)
         const getItemQty = () => {
-            return cart.reduce((acc, x) => acc += x.qty, 0)
+            return cart.reduce((acc, x) => acc += x.quantity, 0)
         }
     
-        //Reduce - Cart - Precio total del carrito
         const getItemPrice = () => {
-            return cart.reduce((acc, x) => acc += x.qty * x.price, 0)
+            return cart.reduce((acc, x) => acc += x.quantity * x.price, 0)
         }    
 
     return (

@@ -20,3 +20,121 @@
 .item-cart:hover {
     background-color: rgba(235, 235, 235, 0.685);
 }
+
+.contenedorTabla {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+    box-shadow: 0 10px 30px -10px rgb(0 0 0 / 45%);
+    margin: auto;
+    margin-bottom: 3rem;
+    padding: 50px;
+    width: 60rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;    
+    color: #707070;
+}
+
+.contenedorCarritoVacio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+    box-shadow: 0 10px 30px -10px rgb(0 0 0 / 45%);
+    margin: auto;
+    margin-bottom: 3rem;
+    padding: 50px;
+    width: 20rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;    
+    color: #707070;
+}
+
+.contenedorCarritoVacio p {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.itemDetailContainer {
+    box-shadow: 0 10px 30px -10px rgb(0 0 0 / 45%);
+    margin: auto;
+    margin-bottom: 3rem;
+    padding: 50px;
+    width: 60rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;    
+    color: #707070;
+}
+
+.tituloTabla {
+    border-bottom: 1px solid gray;
+    margin: 10px;
+}
+
+.tituloTabla h3 {
+    margin: 2px;
+}
+
+.tituloTabla, .itemsTabla {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+}
+
+/* Buttons */
+.buyButton, .backIndexButton{
+    background-color: #c4c4c4;
+    box-shadow: 0 10px 30px -10px rgb(0 0 0 / 20%);
+    height: 32px;
+    width: 280px;
+
+    border-radius: 5px;
+    font-weight: bold;
+    font-style: italic;
+    border-color: #919191;
+    color: black;
+    margin: 1rem;
+}
+
+.buyButton:hover {
+    background: #a5f2a7;
+}
+
+.backIndexButton:hover {
+    background: #919191;
+}
+
+.clearButton {
+    background-color: #ececec;
+    box-shadow: 0 10px 30px -10px rgb(0 0 0 / 20%);
+    height: 32px;
+    width: 280px;
+
+    border-radius: 5px;
+    font-weight: bold;
+    font-style: italic;
+    border-color: #919191;
+    color: black;
+    margin: 1rem;
+}
+
+.clearButton:hover {
+    background: #fc6b6b;
+}
+
+.totalPrice {
+    font-size: large;
+    font-weight: bold;
+
+    box-shadow: 0 10px 30px -10px rgb(0 0 0 / 45%);
+    margin: 2rem auto;
+    padding: 30px;
+    width: 20rem;
+    border-radius: 1rem;
+    color: #585858;
+}

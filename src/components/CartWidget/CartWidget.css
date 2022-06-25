@@ -21,6 +21,11 @@
     font-size: medium;
 }
 
+.ActiveOption, .Option {
+    text-decoration: none;
+    font-style: normal;
+}
+
 .CartImg {
     margin-right: 10px;
 }
