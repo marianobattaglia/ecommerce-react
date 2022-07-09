@@ -83,11 +83,12 @@
 
 .tituloTabla, .itemsTabla {
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-columns: 200px 150px 150px 150px 100px;
+    align-items: center;
 }
 
 /* Buttons */
-.buyButton, .backIndexButton{
+.backIndexButton{
     background-color: #c4c4c4;
     box-shadow: 0 10px 30px -10px rgb(0 0 0 / 20%);
     height: 32px;
@@ -120,11 +121,16 @@
     font-style: italic;
     border-color: #919191;
     color: black;
-    margin: 1rem;
+    cursor: pointer
 }
 
 .clearButton:hover {
     background: #fc6b6b;
+}
+
+.buttonContainer {
+    margin: 0;
+    padding: 0;
 }
 
 .totalPrice {
@@ -137,4 +143,25 @@
     width: 20rem;
     border-radius: 1rem;
     color: #585858;
+}
+
+.delete-btn {
+    background-color: transparent;
+    display: flex;
+    justify-items: center;
+    border: transparent;
+    border-radius: 10px;
+    background-color: #f1bfbf;
+    cursor: pointer
+}
+
+.DeleteImg {
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    justify-self: center;
+}
+
+.delete-btn:hover {
+    background-color: #ff5b5b;
 }

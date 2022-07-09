@@ -4,10 +4,11 @@ import { useContext } from 'react';
 import Swal from 'sweetalert2'
 import { Link } from 'react-router-dom';
 import CartContext from '../../context/CartContext';
+import CartCheckout from '../CartCheckout/CartCheckout';
 import './Cart.css'
 
 const Cart = () => {
-    const { cart, emptyCart, getItemPrice, deleteItem, getItemQty, clearCart } = useContext(CartContext)
+    const { cart, getItemPrice, removeItem, getItemQty, clearCart } = useContext(CartContext)
 
     const purchaseAlert = () => {
         Swal.fire({
@@ -46,13 +47,18 @@ const Cart = () => {
         <section className='container'>
         <h2 className='tituloCarrito'>Carrito de compras</h2>
             {cart.length > 0 &&
-                <div className='contenedorTabla'>
-                    <div className='tituloTabla'>
-                        <h3>Productos</h3>
-                        <h3>Cantidad</h3>
-                        <h3>Precio</h3>
-                        <h3>Total</h3>
-                    </div>
+                <div> 
+                    {/*Product table container*/}
+                    <div className='contenedorTabla'>
+                        <h2>Detalle de su compra:</h2>
+                        <div className='tituloTabla'>
+                            <h3>Productos</h3>
+                            <h3>Cantidad</h3>
+                            <h3>Precio</h3>
+                            <h3>Total</h3>
+                            <h3> </h3>
+                        </div>
+                    
                     {cart.map((e, index) => (
                         <>
                         <div className='itemsTabla'>
@@ -60,42 +66,28 @@ const Cart = () => {
                             <h5>{e.quantity}</h5>
                             <h5>{e.price}</h5>
                             <h5>{e.price * e.quantity}</h5>
+                            <button className='delete-btn' onClick={() => removeItem(e.id)}> <img src="/images/delete.svg" alt='delete' className='DeleteImg'/> Eliminar </button>
                         </div>
-                        {/*
-                        <table>
-                            <tr>
-                                <th>Productos</th>
-                                <th>Cantidad</th>
-                                <th>Precio</th>
-                                <th>Total</th>
-                            </tr>
-                            <tr>
-                                <td>{e.name}</td>
-                                <td>{e.quantity}</td>
-                                <td>{e.price}</td>
-                                <td>{e.price * e.quantity}</td>
-                            </tr>
-                        </table>
-                        */}
                         </>
                     ))}
+                    <div className='cartPrice'>
+                        <h3>Precio total: ${getItemPrice()}</h3>
+                    </div>
+                    <div className='buttonContainer'>
+                        <button className='clearButton' onClick={() => {
+                            clearCart()
+                            emptyCartAlert()
+                        }}>Vaciar carrito</button>
+                    </div>
+                    </div>
 
+                    <CartCheckout />
                 </div>
             }
         </section>
 
         {cart.length > 0 ?
-            <div className='contenedorButtons'>
-                <p className='totalPrice'>Precio total: ${getItemPrice()}</p>
-                <button className='clearButton' onClick={() => {
-                    clearCart()
-                    emptyCartAlert()
-                }}>Vaciar carrito</button>
-                <button className='buyButton' onClick={() => {
-                    purchaseAlert()
-                    clearCart()
-                }}>Finalizar compra</button>
-            </div> :
+            <div></div> :
             <div className='contenedorCarritoVacio'>
                 <p>NO HAY PRODUCTOS</p>
                 <Link to={'/'}><button className='backIndexButton'>Volver a la tienda</button></Link>
