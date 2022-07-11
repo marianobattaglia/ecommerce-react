@@ -3,7 +3,7 @@
 This is a project developed in React, using useState, useEffect, useForm, Firebase, and LocalStorage.
 
 ## Demo App
-[Click here](https://vercel.com/marianobattaglia/ecommerce-react)
+[Click here](https://ecommerce-react-gilt.vercel.app/)
 
 ## App video demostration
 
