@@ -1,9 +1,10 @@
 
-
 const Logo = () => {
     return (
-    <h1>Maltes Accesorios</h1>
-    //Aqui ira el logo en img una vez se explique como renderizar images
+        <div className="logoContainer">
+            <img src="/images/logo-maltes.png" alt='logo-maltes' className='logoImg'/>
+            <h1>Maltes Accesorios</h1>
+        </div>
     )
 }
 

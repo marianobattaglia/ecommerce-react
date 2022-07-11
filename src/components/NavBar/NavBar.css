@@ -9,48 +9,60 @@ nav {
     padding: 1px;
     font-size: small;
   }
-  
-  /* Option */
-  nav .Option {
-    background: none;
-    padding: 1rem 2rem 1rem 2rem;
-    border: 1px solid #919191;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  
-  nav .Option:hover {
-    background: #808080;
-    padding: 1rem 2rem 1rem 2rem;
-    border: 1px solid;
-  }
-  
-  nav .Option:active {
-    background: #727272;
-    padding: 1rem 2rem 1rem 2rem;
-    border: 1px solid rgb(212, 212, 212);
-  }
 
-  /* Active Option */ 
-  nav .ActiveOption {
-    background: #808080;
-    padding: 1rem 2rem 1rem 2rem;
-    border: 1px solid rgb(212, 212, 212);
-    color: white;
-    font-weight: bold;
-    cursor: pointer
-  }
-  
-  nav .ActiveOption:hover {
-    background: #808080;
-    padding: 1rem 2rem 1rem 2rem;
-    border: 1px solid;
-  }
-  
-  nav .ActiveOption:active {
-    background: #727272;
-    padding: 1rem 2rem 1rem 2rem;
-    border: 1px solid rgb(212, 212, 212);
-  }
+/* Option */
+nav .Option {
+  background: none;
+  padding: 1rem 2rem 1rem 2rem;
+  border: 1px solid #919191;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+nav .Option:hover {
+  background: #808080;
+  padding: 1rem 2rem 1rem 2rem;
+  border: 1px solid;
+}
+
+nav .Option:active {
+  background: #727272;
+  padding: 1rem 2rem 1rem 2rem;
+  border: 1px solid rgb(212, 212, 212);
+}
+
+/* Active Option */ 
+nav .ActiveOption {
+  background: #808080;
+  padding: 1rem 2rem 1rem 2rem;
+  border: 1px solid rgb(212, 212, 212);
+  color: white;
+  font-weight: bold;
+  cursor: pointer
+}
+
+nav .ActiveOption:hover {
+  background: #808080;
+  padding: 1rem 2rem 1rem 2rem;
+  border: 1px solid;
+}
+
+nav .ActiveOption:active {
+  background: #727272;
+  padding: 1rem 2rem 1rem 2rem;
+  border: 1px solid rgb(212, 212, 212);
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 3rem;
+}
+
+.logoImg {
+  height: 3rem;
+  margin-right: 1rem;
+}

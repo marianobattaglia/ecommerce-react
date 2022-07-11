@@ -1,7 +1,5 @@
 import './Item.css'
-import { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import { Context } from '../../App'
 
 const Item = ({ id, cod, name, img, price, stock }) => {
     return (
@@ -12,7 +10,6 @@ const Item = ({ id, cod, name, img, price, stock }) => {
             <h3>$ {price}</h3>
             <h5>Stock: {stock} unidades</h5>
             
-            <button>Comprar</button>
             <Link to={`/detail/${id}`} className='Option'>Ver detalle</Link>
         </li>
     )

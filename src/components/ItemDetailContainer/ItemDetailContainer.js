@@ -1,6 +1,5 @@
 import '../../App.css'
 import { useState, useEffect} from 'react'
-import { getProductById } from '../../asyncmocks'
 import ItemDetail from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
 
@@ -24,9 +23,6 @@ const ItemDetailContainer = () => {
         }).finally(() => {
             setLoading(false)
         })
-//        getProductById(productId).then(response => {
-//            setProduct(response)
-//        })
     }, [productId])
 
     if(loading) {
